@@ -1,0 +1,33 @@
+.reviews{
+    width:25%;
+}
+.reviews__heading{
+    font-weight:700;
+    color:$text-grey;
+    font-size:14px;
+    margin-bottom:2em;
+}
+.reviews__box{
+    background:$white;
+    padding:1em;
+    position:relative;
+}
+.reviews__text{
+    font-size:12px;
+    line-height:1.5;
+}
+.reviews__box::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  bottom:-26px;
+  left:20px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid $white;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent $white;
+  transform:rotate(-45deg);
+
+}

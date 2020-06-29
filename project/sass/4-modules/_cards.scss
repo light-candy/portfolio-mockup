@@ -1,0 +1,27 @@
+.cards{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom:4em;
+   
+}
+
+.card{
+    background:$white;
+    width:20%;
+    border-bottom:5x solid $card-border-grey;
+    border-radius:5px;
+    text-align:center;
+    padding:1em;
+    position:relative;
+}
+.card__heading{
+    color:$text-grey;
+    font-weight:700;
+    margin-bottom:1.5em;
+}
+.card__text{
+    font-weight:400;
+    font-size:12px;
+    line-height:1.5;
+}

@@ -1,0 +1,18 @@
+.menu{
+    display:flex;
+    flex-direction:row;
+
+}
+.menu__item{
+    border-radius:5px;
+    padding:0.5em;
+
+}
+.menu__link{
+    color:$white;
+}
+
+.menu__item_hover{
+    background:$dark-green-2;
+    border-bottom:5px solid $dark-green-3;
+}

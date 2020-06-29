@@ -1,0 +1,15 @@
+.jumbotron{
+    background:$background-highlight-grey;
+    border-radius:5px;
+    display:flex;
+    flex-direction:row;
+    padding:2em;
+    margin-bottom:4em;
+}
+.jumbotron__heading{
+    color:$text-grey;
+    font-size:30px;
+}
+.jumbotron__text{
+    font-size:12px;
+}

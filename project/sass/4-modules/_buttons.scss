@@ -1,0 +1,30 @@
+@mixin button-mix($back-color, $bord-color){
+    border-radius:5px;
+    border:none;
+     border-bottom:5px solid $bord-color;
+     background:$back-color;
+     color:$white;
+}
+
+.button_read{
+    @include button-mix($light-green, $base-green);
+    width:calc(100% - 3em);
+    position:absolute;
+    left:1.5em;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+.button_read:hover{
+    @include button-mix($light-orange-1, $base-orange);
+   
+}
+.button_view{
+    @include button-mix($light-orange-1, $base-orange);
+    padding:1em 3em;
+    font-weight:600;
+
+}
+.button_view:hover{
+    @include button-mix($light-green, $base-green);
+    padding:1em 3em;
+}
