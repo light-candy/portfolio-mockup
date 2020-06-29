@@ -10,3 +10,48 @@
     display:flex;
     fflex-direction:row;
 }
+.base {
+    stroke-dasharray:125.6px;
+    stroke-dashoffset:125.6px;
+    stroke:$base-green;
+    stroke-width:20px;
+    fill:transparent;
+
+}
+.stage-1-done {
+    stroke-dasharray:62.8px 188.4px;
+    stroke-dashoffset:125.6px;
+    stroke:$base-orange;
+    stroke-width:20px;
+    fill:transparent;
+
+}
+
+.stage-2-done {
+    stroke-dasharray:75.8px 175.4px;
+    stroke-dashoffset:125.6px;
+    stroke:$base-orange;
+    stroke-width:20px;
+    fill:transparent;
+
+}
+.stage-3-done {
+    stroke-dasharray:95.8px 155.4px;
+    stroke-dashoffset:125.6px;
+    stroke:$base-orange;
+    stroke-width:20px;
+    fill:transparent;
+
+}
+.stage-4-done {
+    stroke-dasharray:125.6px 125.6px;
+    stroke-dashoffset:125.6px;
+    stroke:$base-orange;
+    stroke-width:20px;
+    fill:transparent;
+
+}
+text{
+    font-weight:700;
+    fill:$text-grey;
+}
