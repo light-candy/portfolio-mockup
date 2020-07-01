@@ -52,7 +52,7 @@ function imgmin(){
         .pipe(changed(imgDEST))
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
+            imagemin.mozjpeg({progressive: true}),
             imagemin.optipng({optimizationLevel: 5})
         ]))
         .pipe(gulp.dest(imgDEST));
