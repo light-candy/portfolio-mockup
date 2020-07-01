@@ -3,10 +3,18 @@
     font-size:12px;
     font-weight:400;
     line-height:2;
-    padding:4em;
-    padding-left:0;
+    padding:4em 4em 4em 0;
 }
 .info__text{
-    padding:2em;
-    padding-left:0;
+    padding:2em 0 2em 0;
+}
+.info__email_strong{
+    font-size:20px;
+    font-weight:600;
+    font-style:italic;
+}
+.info__phone_strong{
+     font-size:20px;
+    font-weight:600;
+    font-style:italic;
 }

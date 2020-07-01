@@ -1,0 +1,23 @@
+.blog{
+    padding:4em 0 4em 0;
+    font-size:12px;
+}
+.blog__heading{
+    font-size:20px;
+    color:$white;
+    line-height:2;
+
+}
+.blog__heading_strong{
+    font-size:20px;
+    font-weight:700;
+    color:$white;
+    line-height:2;
+
+}
+.blog__heading_italic{
+    font-size:20px;
+    font-style:italic;
+    color:$white;
+    line-height:2;
+}
