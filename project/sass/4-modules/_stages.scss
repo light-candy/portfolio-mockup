@@ -1,57 +1,64 @@
 .stages{
-    width:50%;
+    width:60%;
+    padding:4em 2em 4em 0;
 }
 .stages__text{
     font-size:12px;
     line-height:1.5;
-    padding:2em;
+    padding:0 1em 2em 1em;
 }
 .stages__diagram{
     display:flex;
-    fflex-direction:row;
+    flex-direction:row;
+}
+.stage{
+    padding:0.5em;
 }
 .base {
-    stroke-dasharray:125.6px;
-    stroke-dashoffset:125.6px;
+    stroke-dasharray:157px;
+    stroke-dashoffset:157px;
     stroke:$base-green;
-    stroke-width:20px;
+    stroke-width:15px;
     fill:transparent;
 
 }
 .stage-1-done {
-    stroke-dasharray:62.8px 188.4px;
-    stroke-dashoffset:125.6px;
+    stroke-dasharray:78.5px 235.5px;
+    stroke-dashoffset:157px;
     stroke:$base-orange;
-    stroke-width:20px;
+    stroke-width:15px;
     fill:transparent;
 
 }
 
 .stage-2-done {
-    stroke-dasharray:75.8px 175.4px;
-    stroke-dashoffset:125.6px;
+    stroke-dasharray:98.5px 215.5px;
+    stroke-dashoffset:157px;
     stroke:$base-orange;
-    stroke-width:20px;
+    stroke-width:15px;
     fill:transparent;
 
 }
 .stage-3-done {
-    stroke-dasharray:95.8px 155.4px;
-    stroke-dashoffset:125.6px;
+    stroke-dasharray:118.5px 195.5px;
+    stroke-dashoffset:157px;
     stroke:$base-orange;
-    stroke-width:20px;
+    stroke-width:15px;
     fill:transparent;
 
 }
 .stage-4-done {
-    stroke-dasharray:125.6px 125.6px;
-    stroke-dashoffset:125.6px;
+    stroke-dasharray:157px 157px;
+    stroke-dashoffset:157px;
     stroke:$base-orange;
-    stroke-width:20px;
+    stroke-width:15px;
     fill:transparent;
 
 }
 text{
     font-weight:700;
     fill:$text-grey;
+}
+.stage__number{
+    font-size:30px;
 }

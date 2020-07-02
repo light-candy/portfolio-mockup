@@ -1,0 +1,37 @@
+.separator{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.separator__heading{
+    color:$text-grey;
+    font-size:16px;
+    font-weight:700;
+}
+.separator__dot{
+    width:7px;
+    height:7px;
+    background:$hr-grey;
+    border-radius:50%;
+    margin-left:1.5em;
+}
+.separator__line{
+    width:75%;
+    margin-left:0;
+    border-top:1px solid $hr-grey;
+    border-bottom:none;
+}
+.separator__prev, .separator__next{
+    background:$text-grey;
+    border-radius:5px;
+    height:20px;
+    width:20px;
+    margin-left:0.5em;
+    text-align:center;
+}
+.separator__prev{
+    transform:rotate(180deg);
+}
+.separator__icon{
+    margin-left:3px;
+}
