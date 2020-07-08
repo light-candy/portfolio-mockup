@@ -4,9 +4,7 @@
     align-items:center;
 }
 .separator__heading{
-    color:$text-grey;
-    font-size:16px;
-    font-weight:700;
+    @include heading;
 }
 .separator__dot{
     width:7px;
@@ -28,6 +26,10 @@
     width:20px;
     margin-left:0.5em;
     text-align:center;
+    cursor:pointer;
+    &:hover{
+        background:$base-orange;
+    }
 }
 .separator__prev{
     transform:rotate(180deg);

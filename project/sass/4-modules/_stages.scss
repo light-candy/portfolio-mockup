@@ -3,8 +3,7 @@
     padding:4em 2em 4em 0;
 }
 .stages__text{
-    font-size:12px;
-    line-height:1.5;
+    @include regular-text;
     padding:0 1em 2em 1em;
 }
 .stages__diagram{

@@ -1,6 +1,5 @@
 .copyright{
-    font-size:12px;
+    @include regular-text;
     color:$white;
-    font-weight:400;
     padding-top:0.5em;
 }

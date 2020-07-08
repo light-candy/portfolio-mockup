@@ -6,6 +6,9 @@
 .slider__item{
     position:relative;
 }
+.invisible{
+    display:none;
+}
 .slider__caption{
     position:absolute;
     top:30%;
@@ -21,23 +24,15 @@
     font-size:40px;
     width:300px;
     border-radius:3px;
-
 }
-
 .slider__text{
     color:$white;
-    font-weight:400;
-    line-height:2;
-    font-size:14px;
     background:rgba(0,0,0, 0.5);
     padding:0.5em 1.5em 0.5em 1.5em;
     width:350px;
     border-radius:3px;
     margin:7px;
-
 }
-
-
 .slider__bars{
     text-align:center;
     background:$background-grey;
@@ -48,6 +43,13 @@
     width:60px;
     background:$line-grey;
     margin:20px 3px 20px 3px;
+    cursor:pointer;
+}
+.slider__bar:hover{
+    background:$text-grey;
+}
+.active{
+    background:$base-orange;
 }
 .slider__prev{
     position:absolute;
@@ -58,6 +60,13 @@
     border-bottom:5px solid $base-orange;
     border-radius:0 5px 5px 0;
     padding:15px 15px 15px 5px;
+
+    &:hover .arrow_1{
+        d:M0 4 L8 10 L0 16;
+    }
+     &:hover .arrow_2{
+        d:M8 4 L16 10 L8 16;
+    }
 }
 .slider__next{
     position:absolute;
@@ -68,6 +77,12 @@
     border-bottom:5px solid $base-orange;
     border-radius:5px 0 0 5px;
     padding:15px 5px 15px 15px;
+    &:hover .arrow_1{
+        d:M0 4 L8 10 L0 16;
+    }
+     &:hover .arrow_2{
+        d:M8 4 L16 10 L8 16;
+    }
 }
 .slider__arrow_prev{
     transform:rotate(180deg);

@@ -1,1 +1,26 @@
 
+@mixin heading{
+    color:$text-grey;
+    font-weight:700;
+    font-size:16px;
+}
+@mixin regular-text{
+     font-size:12px;
+     line-height:2;
+     font-weight:400;
+}
+@mixin bigger-text{
+    font-weight:400;
+    line-height:2;
+    font-size:14px;
+}
+@mixin blog-heading{
+    font-size:20px;
+    color:$white;
+    line-height:2;
+}
+@mixin footer-heading{
+  color:#386238;
+    font-weight:700;
+    font-size:20px;
+}

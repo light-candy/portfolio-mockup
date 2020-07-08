@@ -6,13 +6,17 @@
     justify-content:space-between;
     padding:1.5em;
     margin-bottom:3em;
+    .jumbotron__heading{
+        color:$text-grey;
+        font-size:30px;
+        font-weight:600;
+    }
+    .jumbotron__text{
+        @include regular-text;
+    }
 }
-.jumbotron__heading{
-    color:$text-grey;
-    font-size:30px;
-    font-weight:600;
-}
-.jumbotron__text{
-    font-size:12px;
-    line-height:2;
+@media screen and (max-width:768px){
+    .jumbotron{
+        flex-direction:column;
+    }
 }

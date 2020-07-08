@@ -1,18 +1,20 @@
 .company-menu{
+    @include regular-text;
     color:$white;
-    line-height:2;
-    font-size:12px;
-    font-weight:400;
     padding:4em 4em 4em 0;
-}
-.company-menu__heading{
-    color:#386238;
-    font-weight:700;
-    font-size:20px;
-}
-.company-menu__list{
-    padding-top:0.5em;
-}
-.company-menu__item:hover path{
-    stroke-width:3px;
+    .company-menu__heading{
+        @include footer-heading;
+    }
+    .company-menu__list{
+        padding-top:0.5em;
+    }
+    .company-menu__item{
+        cursor:pointer;
+        &:hover{
+            font-weight:600;
+        }
+        &:hover path{
+            stroke-width:3px;
+        }
+    }
 }

@@ -1,7 +1,13 @@
 .social__list{
     display:flex;
     flex-direction:row;
-}
-.social__item{
-    margin-left:2em;
+    .social__item{
+        margin-left:2em;
+        &:hover svg{
+            height:30px;
+        }
+    }
+    .social__link{
+        cursor:pointer;
+    }
 }

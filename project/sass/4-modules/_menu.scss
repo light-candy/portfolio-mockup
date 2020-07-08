@@ -1,18 +1,29 @@
 .menu{
     display:flex;
     flex-direction:row;
-
+    font-weight:600;
+    font-size:14px;
 }
 .menu__item{
     border-radius:5px;
-    padding:0.5em;
-
+    padding:0.5em 1em 0.5em 1em;
+    border-bottom:5px solid $base-green;
+    cursor:pointer;
 }
 .menu__link{
     color:$white;
 }
 
-.menu__item_hover{
+.menu__item:hover{
     background:$dark-green-2;
     border-bottom:5px solid $dark-green-3;
+}
+.menu__item:active{
+    background:$dark-green-2;
+    border-bottom:5px solid $dark-green-3;
+}
+@media screen and (max-width:768px){
+    .menu{
+        display:none;
+    }
 }
