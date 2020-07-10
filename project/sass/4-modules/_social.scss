@@ -2,12 +2,23 @@
     display:flex;
     flex-direction:row;
     .social__item{
-        margin-left:2em;
-        &:hover svg{
-            height:30px;
+        margin-left:1em;
+        &:hover path{
+            fill:$light-orange-1;
+        }
+        &:hover polygon{
+            fill:$light-orange-1;
         }
     }
     .social__link{
         cursor:pointer;
+    }
+}
+.social__item:first-child{
+    margin-left:0;
+}
+@media screen and (min-width:$viewport-5){
+    .social-item{
+        margin-left:2em;
     }
 }

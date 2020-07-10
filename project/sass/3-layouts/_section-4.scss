@@ -1,5 +1,11 @@
 .section-4{
     background:$background-highlight-grey;
+    padding-left:3em;
+    padding-right:3em;
+}
+@media screen and (min-width:$viewport-9){
+    .section-4{
     padding-left:7em;
     padding-right:7em;
+    }
 }

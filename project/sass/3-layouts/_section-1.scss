@@ -1,12 +1,13 @@
 .section-1{
     background:$background-grey;
-    padding-left:7em;
-    padding-right:7em;
     padding-bottom:1em;
-}
-@media screen and (max-width:768px){
-    .section-1{
     padding-left:3em;
     padding-right:3em;
+    }
+
+@media screen and (min-width:$viewport-9){
+    .section-1{
+    padding-left:7em;
+    padding-right:7em;
     }
 }

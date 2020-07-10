@@ -1,7 +1,27 @@
 .section-3{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     background:$background-highlight-grey;
+    padding-left:3em;
+    padding-right:3em;
+    align-items:center;
+}
+@media screen and (min-width:$viewport-5){
+    .section-3{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    }
+}
+
+ @media screen and (min-width:$viewport-9) {
+      .section-3{
     padding-left:7em;
     padding-right:7em;
-}
+    }
+ }
+ @media screen and (min-width:$viewport-11){
+     .section-3{
+         flex-wrap:nowrap;
+     }
+ }

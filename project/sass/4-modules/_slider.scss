@@ -87,3 +87,14 @@
 .slider__arrow_prev{
     transform:rotate(180deg);
 }
+.slider__image{
+    display:none;
+}
+@media screen and (min-width:$viewport-5){
+    .slider__image{
+        display:block;
+    }
+    .slider__image_mobile{
+        display:none;
+    }
+}

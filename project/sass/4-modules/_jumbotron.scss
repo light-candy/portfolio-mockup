@@ -2,7 +2,7 @@
     background:$background-highlight-grey;
     border-radius:5px;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:space-between;
     padding:1.5em;
     margin-bottom:3em;
@@ -13,10 +13,14 @@
     }
     .jumbotron__text{
         @include regular-text;
+        padding:1em 0 0.5em 0;
     }
 }
-@media screen and (max-width:768px){
+@media screen and (min-width:$viewport-7){
     .jumbotron{
-        flex-direction:column;
+        flex-direction:row;
+        .jumbotron__text{
+            padding:0;
+        }
     }
 }

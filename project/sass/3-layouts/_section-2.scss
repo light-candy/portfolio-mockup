@@ -1,18 +1,25 @@
 .section-2{
     background:$background-highlight-grey;
-    padding-right:7em;
-    padding-left:7em;
+    padding-right:3em;
+    padding-left:3em;
     padding-top:4em;
     padding-bottom:4em;
     text-align:center;
 }
+@media screen and (min-width:$viewport-9){
+    .section-2{
+    padding-left:7em;
+    padding-right:7em;
+    }
+}
+
 
 .section-2__heading{
     color:$base-orange;
     font-size:40px;
     font-weight:600;
 }
-.section-2__text{
-    font-size:12px;
 
+.section-2__text{
+    @include regular-text;
 }

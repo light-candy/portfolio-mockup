@@ -1,7 +1,7 @@
 .info{
     @include regular-text;
     color:$white;
-    padding:4em 4em 4em 0;
+    padding:4em 0 2em 0;
     .info__text{
         padding:2em 0 2em 0;
     }
@@ -14,5 +14,10 @@
         font-size:20px;
         font-weight:600;
         font-style:italic;
+    }
+}
+@media screen and (min-width:$viewport-5){
+    .info{
+        padding:4em 4em 4em 0;
     }
 }
