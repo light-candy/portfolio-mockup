@@ -27,6 +27,7 @@
     margin-left:0.5em;
     text-align:center;
     cursor:pointer;
+    transition:all 0.8s ease-in;
     &:hover{
         background:$base-orange;
     }

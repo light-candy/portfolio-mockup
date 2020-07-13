@@ -17,17 +17,24 @@
     .blog-preview__image{
         height:64px;
         width:64px;
+        transition:all 0.8s ease-in;
     }
     .blog-preview__text{
         @include regular-text;
         padding-left:1em;
         margin-top:-0.5em;
+
     }
     .blog-preview__heading{
         color:$white;
+        transition:all 0.8s ease-in;
+        font-weight:400;
+        text-decoration:none;
     }
     .blog-preview__date{
         color:#386238;
+        transition:all 0.8s ease-in;
+        font-weight:400;
     }
 
 }

@@ -37,6 +37,7 @@
     padding-top:1.5em;
     margin-bottom:2em;
     cursor:pointer;
+    transition:all 0.8s ease-in;
     &:hover{
         background:$white;
     }
