@@ -1,4 +1,5 @@
 .section-2{
+   
     background:$background-highlight-grey;
     padding-right:3em;
     padding-left:3em;
@@ -22,4 +23,5 @@
 
 .section-2__text{
     @include regular-text;
+    color:$regular-text-grey;
 }

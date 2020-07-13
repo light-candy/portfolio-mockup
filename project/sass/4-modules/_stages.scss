@@ -16,6 +16,7 @@
 .stages__text{
     @include regular-text;
     padding:0 1em 2em 1em;
+    color:$regular-text-grey;
 }
 .stages__diagram{
     display:flex;
@@ -35,16 +36,16 @@
     }
 }
 .base {
-    stroke-dasharray:157px;
-    stroke-dashoffset:157px;
+    stroke-dasharray:131.9px;
+    stroke-dashoffset:131.9px;
     stroke:$base-green;
     stroke-width:15px;
     fill:transparent;
 
 }
 .stage-1-done {
-    stroke-dasharray:78.5px 235.5px;
-    stroke-dashoffset:157px;
+    stroke-dasharray:65.9px 197.8px;
+    stroke-dashoffset:131.9px;
     stroke:$base-orange;
     stroke-width:15px;
     fill:transparent;
@@ -52,24 +53,24 @@
 }
 
 .stage-2-done {
-    stroke-dasharray:98.5px 215.5px;
-    stroke-dashoffset:157px;
+    stroke-dasharray:85.9px 177.8px;
+    stroke-dashoffset:131.9px;
     stroke:$base-orange;
     stroke-width:15px;
     fill:transparent;
 
 }
 .stage-3-done {
-    stroke-dasharray:118.5px 195.5px;
-    stroke-dashoffset:157px;
+    stroke-dasharray:105.9px 157.8px;
+    stroke-dashoffset:131.9px;
     stroke:$base-orange;
     stroke-width:15px;
     fill:transparent;
 
 }
 .stage-4-done {
-    stroke-dasharray:157px 157px;
-    stroke-dashoffset:157px;
+    stroke-dasharray:131.9px 131.9px;
+    stroke-dashoffset:131.9px;
     stroke:$base-orange;
     stroke-width:15px;
     fill:transparent;
@@ -80,5 +81,5 @@ text{
     fill:$text-grey;
 }
 .stage__number{
-    font-size:30px;
+    font-size:25px;
 }

@@ -5,6 +5,7 @@
 }
 .slider__item{
     position:relative;
+    transition:all 1s ease-out;
 }
 .invisible{
     display:none;
@@ -69,6 +70,7 @@
     background:$line-grey;
     margin:20px 3px 20px 3px;
     cursor:pointer;
+    transition:all 0.8s ease-in-out;
 }
 .slider__bar:hover{
     background:$text-grey;

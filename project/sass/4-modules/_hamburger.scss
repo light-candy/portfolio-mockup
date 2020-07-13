@@ -4,14 +4,31 @@
        width:30px;
        border:none;
        margin-left:1em;
+       cursor:pointer;
+       z-index:3;
    }
    .hamburger__bar{
        display:block;
        background:$white;
        width:30px;
        height:4px;
-    margin-bottom:5px;
+       margin-bottom:5px;
    }
+
+   .is-active .hamburger__bar_1 {
+       transform: rotate(-45deg) translate(-6px, 7px);
+       border-radius:3px;
+   }
+
+   .is-active .hamburger__bar_2 {
+       opacity: 0;
+   }
+
+   .is-active .hamburger__bar_3 {
+       transform: rotate(45deg) translate(-6px, -7px);
+       border-radius:3px;
+   }
+
    @media screen and (min-width:$viewport-7){
        .hamburger{
            display:none;

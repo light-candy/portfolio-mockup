@@ -1,0 +1,18 @@
+.screens-image__image{
+    width:100%;
+    margin-bottom:-2px;
+    display:none;
+}
+.screens-image__image_mob{
+    width:100%;
+    margin-bottom:-2px;
+    display:block;
+}
+@media screen and (min-width:$viewport-7){
+    .screens-image__image{
+        display:block;
+    }
+    .screens-image__image_mob{
+        display:none;
+    }
+}

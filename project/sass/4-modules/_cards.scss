@@ -80,6 +80,7 @@
 }
 .card__text{
     @include regular-text;
+    color:$regular-text-grey;
 }
 .button_read{
     display:none;
