@@ -27,6 +27,16 @@
     color:$white;
 }
 
+.menu__icon{
+    transform:rotate(90deg);
+    margin-bottom:-3px;
+    display:none;
+}
+@media screen and (min-width:$viewport-11){
+    .menu__icon{
+        display:block;
+    }
+}
 .menu__item:hover{
     background:$dark-green-2;
     border-bottom:5px solid $dark-green-3;
