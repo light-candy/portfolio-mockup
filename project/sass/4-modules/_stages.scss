@@ -1,18 +1,6 @@
 .stages{
     padding:3em 0 0 0;
 }
-@media screen and (min-width:$viewport-5){
-.stages{
-    order:2;
-    width:60%;
-     padding:4em 2em 4em 0;
-}
-}
-@media screen and (min-width:$viewport-11){
-    .stages{
-        order:0;
-    }
-}
 .stages__text{
     @include regular-text;
     padding:0 1em 2em 1em;
@@ -31,10 +19,22 @@
     display:none;
 }
 @media screen and (min-width:$viewport-5){
+    .stages{
+        order:2;
+        width:60%;
+        padding:4em 2em 4em 0;
+    }
     .stage_hidden{
         display:block;
     }
 }
+@media screen and (min-width:$viewport-11){
+    .stages{
+        order:0;
+    }
+}
+
+
 .base {
     stroke-dasharray:131.9px;
     stroke-dashoffset:131.9px;

@@ -1,40 +1,15 @@
-
 .cards{
     display:flex;
     flex-direction:column;
 }
-
-@media screen and (min-width:$viewport-5){
-    .cards{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-    }
-}
-
-
-@media screen and (min-width:$viewport-9){
-    .cards{
-    justify-content:space-between;
-    margin-bottom:2em;
-    flex-wrap:nowrap;
-   }
-
-}
-
-
-
-
 .card{
     background:$card-grey;
     width:93%;
     border-bottom:5px solid $card-border-grey;
     border-radius:5px;
     text-align:center;
-    padding:1em;
+    padding:1.5em 1em 1.5em 1em;
     position:relative;
-    padding-bottom:1.5em;
-    padding-top:1.5em;
     margin-bottom:2em;
     cursor:pointer;
     transition:all 0.8s ease-in;
@@ -45,35 +20,6 @@
         @include button-mix($light-orange-1, $base-orange);
     }
 }
-
-@media screen and (min-width:$viewport-5){
-    .card{
-        width:40%;
-        padding-top:4em;
-        padding-bottom:4em;
-    }
-    .card_odd{
-        margin-right:6%;
-    }
-}
-@media screen and (min-width:$viewport-7){
-    .card{
-        width:43%;
-    }
-    .card_odd{
-    margin-right:4%;
-}
-}
-@media screen and (min-width:$viewport-9){
-    .card{
-        width:20%;
-    }
-    .card_odd{
-        margin-right:0;
-    }
-}
-
-
 .card__heading{
     @include heading;
     margin-bottom:1.5em;
@@ -86,12 +32,47 @@
 .button_read{
     display:none;
 }
+
 @media screen and (min-width:$viewport-5){
-.card__text{
-    display:none;
+    .cards{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .card{
+        width:40%;
+        padding-top:4em;
+        padding-bottom:4em;
+    }
+    .card_odd{
+        margin-right:6%;
+    }
+    .card__text{
+        display:none;
+    }
 }
+@media screen and (min-width:$viewport-7){
+    .card{
+        width:43%;
+    }
+    .card_odd{
+        margin-right:4%;
+    }
 }
+
+
 @media screen and (min-width:$viewport-9){
+    .cards{
+        justify-content:space-between;
+        margin-bottom:2em;
+        flex-wrap:nowrap;
+    }
+    .card{
+        width:20%;
+    }
+    .card_odd{
+        margin-right:0;
+    }
     .card__text{
         display:block;
     }
@@ -99,5 +80,3 @@
         display:block;
     }
 }
-
-

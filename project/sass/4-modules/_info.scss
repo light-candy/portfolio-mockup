@@ -6,14 +6,10 @@
         padding:2em 0 2em 0;
     }
     .info__email_strong{
-        font-size:20px;
-        font-weight:600;
-        font-style:italic;
+        @include contacts-italic;
     }
     .info__phone_strong{
-        font-size:20px;
-        font-weight:600;
-        font-style:italic;
+        @include contacts-italic;
     }
 }
 @media screen and (min-width:$viewport-5){

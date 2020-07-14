@@ -1,11 +1,11 @@
 @mixin button-mix($back-color, $bord-color){
     border-radius:5px;
     border:none;
-     border-bottom:5px solid $bord-color;
-     background:$back-color;
-     color:$white;
-     cursor:pointer;
-     transition:all 0.8s ease-in-out;
+    border-bottom:5px solid $bord-color;
+    background:$back-color;
+    color:$white;
+    cursor:pointer;
+    transition:all 0.8s ease-in-out;
 }
 
 .button_read{
@@ -16,24 +16,34 @@
     padding-top:1em;
     padding-bottom:1em;
     bottom:-2em;
+    &:hover{
+        @include button-mix($light-orange-1, $base-orange);
+    }
+    &:focus{
+        @include button-mix($light-orange-1, $base-orange);
+    }
+    &:active{
+        @include button-mix($light-orange-1, $base-orange);
+    }
 }
-.button_read:hover{
-    @include button-mix($light-orange-1, $base-orange);
-   
-}
+
 .button_view{
     @include button-mix($light-orange-1, $base-orange);
     padding:1em 3em;
     font-weight:600;
-}
-.button_view:hover{
-    @include button-mix($light-green, $base-green);
-    padding:1em 3em;
-}
-@media screen and (max-width: 768px){
-    .button_view{
-        max-width:170px;
-        max-height:54px;
-        font-size:12px;
+    max-width:170px;
+    max-height:54px;
+    font-size:12px;
+    &:hover{
+        @include button-mix($light-green, $base-green);
+        padding:1em 3em;
+    }
+     &:focus{
+        @include button-mix($light-green, $base-green);
+        padding:1em 3em;
+     }
+      &:active{
+        @include button-mix($light-green, $base-green);
+        padding:1em 3em;
     }
 }

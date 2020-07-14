@@ -25,14 +25,17 @@
      .menu__link_mobile{
         color:$white;
         cursor:pointer;
+         &:hover path{
+           stroke:#ffffff;
+        }
+        &:focus path{
+           stroke:#ffffff;
+        }
+        &:active path{
+           stroke:#ffffff;
+        }
      }
      .menu__item_mobile{
         padding: 1em 0 1em 0;
-     }
 
-     .menu__item_mobile:hover path{
-        stroke:#ffffff;
-     }
-.menu__item_mobile:focus path{
-        stroke:#ffffff;
      }

@@ -31,11 +31,18 @@
     &:hover{
         background:$base-green;
     }
+    &:focus-within{
+      background:$base-green;
+    }
 }
 
 .droppable{
-    position:relative;
+  position:relative;
     &:hover{
+        background:$light-orange-1 !important;
+        border-bottom:5px solid $base-orange;
+    }
+    &:focus-within{
         background:$light-orange-1 !important;
         border-bottom:5px solid $base-orange;
     }

@@ -3,15 +3,27 @@
     flex-direction:row;
     .social__item{
         margin-left:1em;
+    }
+    .social__link{
+        cursor:pointer;
         &:hover path{
             fill:$light-orange-1;
         }
         &:hover polygon{
             fill:$light-orange-1;
         }
-    }
-    .social__link{
-        cursor:pointer;
+        &:focus path{
+            fill:$light-orange-1;
+        }
+        &:focus polygon{
+            fill:$light-orange-1;
+        }
+        &:active path{
+            fill:$light-orange-1;
+        }
+        &:active polygon{
+            fill:$light-orange-1;
+        }
     }
 }
 .social__item:first-child{
