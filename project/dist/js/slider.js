@@ -13,16 +13,11 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("slider__item");
-  var bars = document.getElementsByClassName("slider__bar");
+  var slides = document.getElementsByClassName("logos__box");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].classList.add("invisible");
+      slides[i].classList.add("main");
   }
-  for (i = 0; i < bars.length; i++) {
-      bars[i].classList.remove("active");
-  }
-    slides[slideIndex-1].classList.remove("invisible");
-    bars[slideIndex-1].classList.add("active");
+  slides[slideIndex-1].classList.remove("main");
 }

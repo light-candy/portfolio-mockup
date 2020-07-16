@@ -10,10 +10,7 @@
     flex-direction:column;
 }
 .footer__bottom{
-    padding-left:3em;
-    padding-right:3em;
-    padding-top:1em;
-    padding-bottom:1em;
+    padding:1em 3em 1em 3em;
     background:$dark-green-1;
     display:flex;
     flex-direction:column-reverse;

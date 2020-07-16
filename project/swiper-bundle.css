@@ -311,6 +311,7 @@
     width:60px;
     background:#b0b8b9;
     margin:20px 3px 20px 3px;
+    display:inline-block !important;
 }
 button.swiper-pagination-bullet {
   border: none;

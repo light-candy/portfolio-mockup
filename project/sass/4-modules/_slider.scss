@@ -36,13 +36,14 @@
     background:$background-grey;
 }
 .slider__bar{
-    display:inline-block;
-    height:5px;
-    width:60px;
+    display:inline-block !important;
+    height:5px !important;
+    width:60px !important;
+    border-radius:0 !important;
     background:$line-grey;
     margin:20px 3px 20px 3px;
     cursor:pointer;
-    transition:all 0.8s ease-in-out;
+    transition:all 0.5s ease-in-out;
 &:hover{
     background:$text-grey;
 }
@@ -110,12 +111,4 @@
     }
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}

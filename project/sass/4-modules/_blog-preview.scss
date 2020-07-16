@@ -3,6 +3,7 @@
     flex-direction:row;
     padding:0.5em 1em 0.5em 1em;
     cursor:pointer;
+    transition:all 0.5s ease-in;
     &:hover {
 	    background:$dark-green-1;
         border-radius:5px;
@@ -19,7 +20,6 @@
     .blog-preview__image{
         height:64px;
         width:64px;
-        transition:all 0.4s ease-in;
     }
     .blog-preview__text{
         @include regular-text;
@@ -29,13 +29,11 @@
     }
     .blog-preview__heading{
         color:$white;
-        transition:all 0.6s ease-in;
         font-weight:400;
         text-decoration:none;
     }
     .blog-preview__date{
         color:#386238;
-        transition:all 0.6s ease-in;
         font-weight:400;
     }
 

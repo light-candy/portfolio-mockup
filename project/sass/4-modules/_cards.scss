@@ -12,7 +12,7 @@
     position:relative;
     margin-bottom:2em;
     cursor:pointer;
-    transition:all 0.8s ease-in;
+    transition:all 0.5s ease-in;
     &:hover{
         background:$white;
     }
@@ -36,7 +36,7 @@
     @include regular-text;
     font-weight:600;
     color:#6fc46f;
-    transition:all 0.8s ease-in;
+    transition:all 0.5s ease-in;
 }
 .button_read{
     display:none;

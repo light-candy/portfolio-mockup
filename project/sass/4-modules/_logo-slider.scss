@@ -1,0 +1,18 @@
+.logos__slider{
+    display:flex;
+    flex-direction:row;
+    padding:3em 0 3em 0;
+}
+.logos__box{
+    border-radius:5px;
+    background:$base-green;
+    height:75px;
+    width:170px;
+    margin-left:1.5em;
+}
+.logos__box:first-child{
+    margin-left:0;
+}
+.main{
+    order:2;
+}

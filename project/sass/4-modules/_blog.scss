@@ -4,6 +4,7 @@
 }
 .blog__heading{
     @include blog-heading;
+    padding-left:0.5em;
 }
 
 .blog__heading_strong{
