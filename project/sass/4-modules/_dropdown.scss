@@ -4,7 +4,7 @@
     padding:0.5em 0.5em 0 0.5em;
     display:none;
     position:absolute;
-    z-index:1;
+    z-index:5;
     width:170px;
     left:0;
     top:50px;
@@ -18,7 +18,7 @@
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent $base-orange transparent;
-  z-index:1;
+  z-index:5;
 }
 .dropdown__item{
     background:$light-orange;
@@ -59,7 +59,7 @@ li:focus-within .dropdown{
     padding:0.5em;
     display:none;
     position:absolute;
-    z-index:1;
+    z-index:5;
     width:200px;
     top:50px;
     left:-150px;
@@ -76,11 +76,39 @@ li:focus-within .dropdown{
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent $base-orange transparent;
-  z-index:1;
+  z-index:5;
 }
 li:hover .dropdown_search{
     display:block;
 }
 li:focus-within .dropdown_search{
+    display:block;
+}
+.dropdown_rest{
+    background:$base-orange;
+    border-radius:5px;
+    padding:0.5em 0.5em 0 0.5em;
+    display:none;
+    position:absolute;
+    z-index:5;
+    width:170px;
+    right:0;
+    top:50px;
+}
+.dropdown_rest::before {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  right: 6%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent $base-orange transparent;
+  z-index:5;
+}
+li:hover .dropdown_rest{
+    display:block;
+}
+li:focus-within .dropdown_rest{
     display:block;
 }

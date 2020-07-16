@@ -7,26 +7,25 @@
     color:$regular-text-grey;
 }
 .stages__diagram{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    display:none;
 }
 
 .stage{
     padding:0.5em;
 }
-.stage_hidden{
-    display:none;
-}
+
 @media screen and (min-width:$viewport-5){
+    .stages__diagram{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
     .stages{
         order:2;
         width:60%;
         padding:4em 2em 4em 0;
     }
-    .stage_hidden{
-        display:block;
-    }
+   
 }
 @media screen and (min-width:$viewport-11){
     .stages{

@@ -12,12 +12,24 @@
     .community-menu__list{
         padding-top:0.5em;
     }
-    .community-menu__item{
+    .community-menu__link{
         cursor:pointer;
         &:hover{
             font-weight:600;
         }
+         &:focus{
+            font-weight:600;
+         }
+          &:active{
+            font-weight:600;
+        }
         &:hover path{
+            stroke-width:3px;
+        }
+         &:focus path{
+            stroke-width:3px;
+         }
+          &:active path{
             stroke-width:3px;
         }
     }

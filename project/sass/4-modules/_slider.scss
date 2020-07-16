@@ -7,9 +7,7 @@
     position:relative;
     transition:all 1s ease-out;
 }
-.invisible{
-    display:none;
-}
+
 
 .slider__heading{
     color:$white;
@@ -60,6 +58,7 @@
     border-bottom:5px solid transparent;
     border-radius:0 5px 5px 0;
     padding:15px 15px 15px 5px;
+    z-index:4;
 }
 .slider__next{
     position:absolute;
@@ -69,6 +68,7 @@
     border-bottom:5px solid transparent;
     border-radius:5px 0 0 5px;
     padding:15px 5px 15px 15px;
+    z-index:4;
 }
 .slider__arrow_prev{
     transform:rotate(180deg);

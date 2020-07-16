@@ -19,6 +19,9 @@
     &:hover .button_read{
         @include button-mix($light-orange-1, $base-orange);
     }
+    &:hover .card__text_more{
+        color:$light-orange-1;
+    }
 }
 .card__heading{
     @include heading;
@@ -28,6 +31,12 @@
 .card__text{
     @include regular-text;
     color:$regular-text-grey;
+}
+.card__text_more{
+    @include regular-text;
+    font-weight:600;
+    color:#6fc46f;
+    transition:all 0.8s ease-in;
 }
 .button_read{
     display:none;
@@ -75,6 +84,9 @@
     }
     .card__text{
         display:block;
+    }
+    .card__text_more{
+        display:none;
     }
     .button_read{
         display:block;

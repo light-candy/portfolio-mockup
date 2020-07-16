@@ -10,7 +10,10 @@
     margin-bottom:-3px;
     display:none;
 }
-
+.menu__icon_chevr{
+    transform:rotate(90deg);
+    margin-bottom:-6px;
+}
 
 @media screen and (min-width:$viewport-7){
     .menu{
@@ -50,6 +53,9 @@
 @media screen and (min-width:$viewport-11){
     .menu__icon{
         display:inline-block;
+    }
+    .menu__item_fold{
+        display:none;
     }
 }
 

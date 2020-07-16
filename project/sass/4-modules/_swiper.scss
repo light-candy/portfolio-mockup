@@ -1,0 +1,13 @@
+.stages__slider{
+    width:200px;
+    height:120px;
+}
+.stages__slide{
+    display:flex;
+    justify-content:center;
+}
+@media screen and (min-width:$viewport-5){
+    .stages__slider{
+        display:none;
+    }
+}
