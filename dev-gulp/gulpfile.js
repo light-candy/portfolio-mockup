@@ -15,11 +15,12 @@ var root = '../project/',
     scss = root + 'sass/',
     js = root + 'src/js',
     jsdist = root + 'dist/js';
+    dist = root + 'dist/';
 
 var styleWatchFiles = scss + '**/*.scss';
 
 var cssSRC = [
-    root + 'src/css/st.css',
+    root + 'src/css/swiper-bundle.css',
     root + 'style.css'
 ];
 var imgSRC = root + 'src/images/*';
@@ -44,7 +45,7 @@ function concatCSS(){
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('./maps/'))
         .pipe(lineec())
-        .pipe(gulp.dest(scss));
+        .pipe(gulp.dest(dist));
 }
 
 function imgmin(){
@@ -65,7 +66,7 @@ function watch(){
     });
     gulp.watch(styleWatchFiles, gulp.series([css, concatCSS]));
     gulp.watch(imgSRC, imgmin);
-    gulp.watch([scss + 'style.min.css']).on('change', browserSync.reload);
+    gulp.watch([dist + 'style.min.css']).on('change', browserSync.reload);
 }
 
 exports.css = css;
