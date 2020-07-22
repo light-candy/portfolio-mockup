@@ -20,23 +20,23 @@
         display:flex;
         flex-direction:row;
         font-weight:600;
-        font-size:14px;
+        font-size:12px;
     }
 
     .menu__item{
         border-radius:5px;
         padding:0.5em 1em 0.5em 1em;
-        border-bottom:5px solid $base-green;
+        border-bottom:2px solid $base-green;
         cursor:pointer;
         transition:all 0.5s ease-in-out;
 
         &:hover{
             background:$dark-green-2;
-            border-bottom:5px solid $dark-green-3;
+            border-bottom:2px solid $dark-green-3;
         }
         &:focus-within{
             background:$dark-green-2;
-            border-bottom:5px solid $dark-green-3;
+            border-bottom:2px solid $dark-green-3;
         }
     }
         .menu__item_optional{

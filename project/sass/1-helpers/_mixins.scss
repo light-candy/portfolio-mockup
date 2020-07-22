@@ -2,10 +2,10 @@
 @mixin heading{
     color:$text-grey;
     font-weight:700;
-    font-size:16px;
+    font-size:14px;
 }
 @mixin regular-text{
-     font-size:12px;
+     font-size:10px;
      line-height:2;
      font-weight:400;
 }
@@ -15,17 +15,17 @@
     font-size:14px;
 }
 @mixin blog-heading{
-    font-size:20px;
+    font-size:16px;
     color:$white;
     line-height:2;
 }
 @mixin footer-heading{
   color:#386238;
     font-weight:700;
-    font-size:20px;
+    font-size:16px;
 }
 @mixin contacts-italic{
-    font-size:20px;
+    font-size:16px;
     font-weight:600;
     font-style:italic;
 }

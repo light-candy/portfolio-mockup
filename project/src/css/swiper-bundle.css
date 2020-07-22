@@ -219,9 +219,9 @@
     cursor:pointer;
     top:40%;
     left:0;
-    border-bottom:5px solid transparent;
+    border-bottom:3px solid transparent;
     border-radius:0 5px 5px 0;
-    padding:15px 15px 15px 5px;
+    padding:5px 10px 5px 5px;
     z-index:10;
     content:"";
 }
@@ -230,9 +230,9 @@
     cursor:pointer;
     top:40%;
     right:0;
-    border-bottom:5px solid transparent;
+    border-bottom:3px solid transparent;
     border-radius:5px 0 0 5px;
-    padding:15px 5px 15px 15px;
+    padding:5px 5px 5px 10px;
     z-index:10;
 }
 .swiper-button-next-1:after{
@@ -244,7 +244,7 @@
 @media screen and (min-width:576px){
     .swiper-button-next-1, .swiper-button-prev-1{
         background:#e36b2c;
-        border-bottom:5px solid #dc5925;
+        border-bottom:3px solid #dc5925;
     }
         
 }

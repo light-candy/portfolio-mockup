@@ -10,7 +10,7 @@
     flex-direction:column;
 }
 .footer__bottom{
-    padding:1em 3em 1em 3em;
+    padding:0.5em 3em 0.5em 3em;
     background:$dark-green-1;
     display:flex;
     flex-direction:column-reverse;
@@ -28,15 +28,15 @@
 }
 @media screen and (min-width:$viewport-9) {
     .footer__top{
-        padding-left:7em;
-        padding-right:7em;
+        padding-left:8.5em;
+        padding-right:8.5em;
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
     }
 
     .footer__bottom{
-        padding-left:7em;
-        padding-right:7em;
+        padding-left:8.5em;
+        padding-right:8.5em;
         display:flex;
         }
 }

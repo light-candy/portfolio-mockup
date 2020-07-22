@@ -1,9 +1,9 @@
 .reviews{
-  padding:3em 0 4em 0;
+  padding:3em 0 3em 0;
 }
 .reviews__heading{
     @include heading;
-    margin-bottom:2em;
+    margin-bottom:1em;
     text-align:center;
 }
  .reviews__box{
@@ -33,7 +33,7 @@
   }
   .reviews__author{
     color:$base-green;
-    font-size:16px;
+    font-size:14px;
     font-weight:600;
     position:absolute;
     bottom:-30px;
@@ -45,7 +45,7 @@
     }
     .reviews{
       width:50%;
-    padding:4em 0 1em 2em;
+    padding:3em 0 1em 2em;
     }
   }
  @media screen and (min-width:$viewport-11){
@@ -54,6 +54,6 @@
    }
    .reviews{
      width:25%;
-     padding:4em 0 5.5em 0;
+     padding:3em 0 4.5em 0;
    }
  }

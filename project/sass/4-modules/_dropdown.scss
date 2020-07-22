@@ -5,7 +5,7 @@
     display:none;
     position:absolute;
     z-index:5;
-    width:170px;
+    width:150px;
     left:0;
     top:50px;
 }
@@ -26,8 +26,8 @@
     color:$white;
     padding:0.7em;
     margin-bottom:0.5em;
-    font-size:12px;
-    transition:all 0.5s ease-in;
+    font-size:10px;
+    transition:all 0.8s ease-in;
     &:hover{
         background:$base-green;
     }
@@ -40,11 +40,11 @@
   position:relative;
     &:hover{
         background:$light-orange-1 !important;
-        border-bottom:5px solid $base-orange;
+        border-bottom:2px solid $base-orange;
     }
     &:focus-within{
         background:$light-orange-1 !important;
-        border-bottom:5px solid $base-orange;
+        border-bottom:2px solid $base-orange;
     }
 }
 li:hover .dropdown{

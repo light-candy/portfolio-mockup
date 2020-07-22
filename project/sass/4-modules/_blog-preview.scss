@@ -18,13 +18,14 @@
     }
 
     .blog-preview__image{
-        height:64px;
-        width:64px;
+        height:58px;
+        width:58px;
     }
     .blog-preview__text{
         @include regular-text;
         padding-left:1em;
         margin-top:-0.5em;
+        line-height:1.5;
 
     }
     .blog-preview__heading{

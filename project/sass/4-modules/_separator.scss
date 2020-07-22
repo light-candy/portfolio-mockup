@@ -20,11 +20,15 @@
     border-bottom:none;
 }
 .separator__prev, .separator__next{
+    display:none;
+}
+@media screen and (min-width:$viewport-11){
+.separator__prev, .separator__next{
     background:$text-grey;
     border-radius:5px;
     border:none;
-    height:20px;
-    width:20px;
+    height:16px;
+    width:16px;
     margin-left:0.5em;
     text-align:center;
     cursor:pointer;
@@ -41,4 +45,5 @@
 }
 .separator__prev{
     transform:rotate(180deg);
+}
 }
